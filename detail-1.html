@@ -1,0 +1,917 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./public/styles/styles.css" />
+    <link rel="stylesheet" href="./public/styles/loader.css" />
+    <link
+      rel="shortcut icon"
+      href="./public/image/Logo-UTM.png"
+      type="image/x-icon"
+    />
+    <title>Home - Berita</title>
+  </head>
+  <body>
+    <header class="sticky top-0 z-50">
+      <nav class="bg-white shadow-sm">
+        <div
+          class="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8"
+          aria-label="Global"
+        >
+          <div class="flex lg:flex-1">
+            <a href="javascript:void(0)" class="-m-1.5 p-1.5">
+              <span class="sr-only">Your Company</span>
+              <h1 class="font-medium text-xl">
+                Portal Berita <span class="text-yellow-400">UTM</span>
+              </h1>
+            </a>
+          </div>
+          <div class="flex lg:hidden">
+            <button
+              type="button"
+              class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700 hover:bg-gray-100"
+              data-drawer-target="drawer-navigation"
+              data-drawer-show="drawer-navigation"
+              aria-controls="drawer-navigation"
+            >
+              <span class="sr-only">Open main menu</span>
+              <svg
+                class="size-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                aria-hidden="true"
+                data-slot="icon"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+                />
+              </svg>
+            </button>
+          </div>
+          <div class="hidden lg:flex lg:gap-x-12">
+            <a
+              href="javascript:void(0)"
+              class="text-lg font-semibold text-gray-900 hover:text-yellow-400"
+              >Tentang UTM</a
+            >
+            <div class="relative">
+              <button
+                type="button"
+                id="dropdownNavbarLink"
+                data-dropdown-toggle="dropdownNavbar"
+                class="flex items-center gap-x-1 text-lg font-semibold text-gray-900 hover:text-yellow-400 cursor-pointer"
+                aria-expanded="false"
+              >
+                Kelembagaan
+                <svg
+                  class="size-5 flex-none text-gray-400"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                  aria-hidden="true"
+                  data-slot="icon"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+              </button>
+              <div
+                id="dropdownNavbar"
+                class="hidden mt-3 w-screen max-w-3xl overflow-hidden rounded-3xl bg-white shadow-lg ring-1 ring-gray-900/5"
+              >
+                <div by="dropdownLargeButton">
+                  <div
+                    class="grid max-w-screen-xl px-4 py-5 mx-auto text-gray-900 sm:grid-cols-2 md:px-6"
+                  >
+                    <ul>
+                      <li>
+                        <a
+                          href="javascript:void(0)"
+                          class="block p-3 rounded-lg hover:bg-gray-100"
+                        >
+                          <div class="font-semibold">Fakultas Hukum</div>
+                          <span class="text-sm text-gray-500 line-clamp-3"
+                            >Lorem ipsum dolor sit amet consectetur, adipisicing
+                            elit. Sint porro mollitia quibusdam alias quisquam
+                            officiis laudantium minus eos totam quam!</span
+                          >
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="javascript:void(0)"
+                          class="block p-3 rounded-lg hover:bg-gray-100"
+                        >
+                          <div class="font-semibold">
+                            Fakultas Ekonomi dan Bisnis
+                          </div>
+                          <span class="text-sm text-gray-500 line-clamp-3"
+                            >Lorem ipsum dolor sit amet consectetur, adipisicing
+                            elit. Sint porro mollitia quibusdam alias quisquam
+                            officiis laudantium minus eos totam quam!</span
+                          >
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="javascript:void(0)"
+                          class="block p-3 rounded-lg hover:bg-gray-100"
+                        >
+                          <div class="font-semibold">Fakultas Pertanian</div>
+                          <span class="text-sm text-gray-500 line-clamp-3"
+                            >Lorem ipsum dolor sit amet consectetur, adipisicing
+                            elit. Sint porro mollitia quibusdam alias quisquam
+                            officiis laudantium minus eos totam quam!</span
+                          >
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="javascript:void(0)"
+                          class="block p-3 rounded-lg hover:bg-gray-100"
+                        >
+                          <div class="font-semibold">Fakultas Teknik</div>
+                          <span class="text-sm text-gray-500 line-clamp-3"
+                            >Lorem ipsum dolor sit amet consectetur, adipisicing
+                            elit. Sint porro mollitia quibusdam alias quisquam
+                            officiis laudantium minus eos totam quam!</span
+                          >
+                        </a>
+                      </li>
+                    </ul>
+                    <ul>
+                      <li>
+                        <a
+                          href="javascript:void(0)"
+                          class="block p-3 rounded-lg hover:bg-gray-100"
+                        >
+                          <div class="font-semibold">
+                            Fakultas Ilmu Sosial dan Ilmu Budaya
+                          </div>
+                          <span class="text-sm text-gray-500 line-clamp-3"
+                            >Lorem ipsum dolor sit amet consectetur, adipisicing
+                            elit. Sint porro mollitia quibusdam alias quisquam
+                            officiis laudantium minus eos totam quam!</span
+                          >
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="javascript:void(0)"
+                          class="block p-3 rounded-lg hover:bg-gray-100"
+                        >
+                          <div class="font-semibold">
+                            Fakultas Ilmu Pendidikan
+                          </div>
+                          <span class="text-sm text-gray-500 line-clamp-3"
+                            >Lorem ipsum dolor sit amet consectetur, adipisicing
+                            elit. Sint porro mollitia quibusdam alias quisquam
+                            officiis laudantium minus eos totam quam!</span
+                          >
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="javascript:void(0)"
+                          class="block p-3 rounded-lg hover:bg-gray-100"
+                        >
+                          <div class="font-semibold">Fakultas Keislaman</div>
+                          <span class="text-sm text-gray-500 line-clamp-3"
+                            >Lorem ipsum dolor sit amet consectetur, adipisicing
+                            elit. Sint porro mollitia quibusdam alias quisquam
+                            officiis laudantium minus eos totam quam!</span
+                          >
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="javascript:void(0)"
+                          class="block p-3 rounded-lg hover:bg-gray-100"
+                        >
+                          <div class="font-semibold">Fakultas Pascasarjana</div>
+                          <span class="text-sm text-gray-500 line-clamp-3"
+                            >Lorem ipsum dolor sit amet consectetur, adipisicing
+                            elit. Sint porro mollitia quibusdam alias quisquam
+                            officiis laudantium minus eos totam quam!</span
+                          >
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <a
+              href="javascript:void(0)"
+              class="text-lg font-semibold text-gray-900 hover:text-yellow-400"
+              >Data</a
+            >
+            <a
+              href="javascript:void(0)"
+              class="text-lg font-semibold text-gray-900 hover:text-yellow-400"
+              >Admisi</a
+            >
+            <a
+              href="javascript:void(0)"
+              class="text-lg font-semibold text-gray-900 hover:text-yellow-400"
+              >Dokumen</a
+            >
+          </div>
+          <div class="hidden lg:flex lg:flex-1 lg:justify-end">
+            <a
+              href="javascript:void(0)"
+              class="text-lg font-semibold text-gray-900 border-2 border-slate-50 hover:text-yellow-400 hover:border-yellow-400 hover:border-2 px-3 py-2 rounded"
+              >SMMUTM <span aria-hidden="true">&rarr;</span></a
+            >
+          </div>
+        </div>
+
+        <!-- Mobile menu, show/hide based on menu open state. -->
+        <div
+          id="drawer-navigation"
+          class="fixed top-0 left-0 z-40 w-96 h-screen p-4 overflow-y-auto transition-transform -translate-x-full bg-white"
+          tabindex="-1"
+          aria-labelledby="drawer-navigation-label"
+        >
+          <img
+            src="./public/image/Logo-UTM.png"
+            class="w-10 h-10"
+            id="drawer-navigation-label"
+            alt=""
+          />
+          <button
+            type="button"
+            data-drawer-hide="drawer-navigation"
+            aria-controls="drawer-navigation"
+            class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 absolute top-2.5 end-2.5 inline-flex items-center"
+          >
+            <svg
+              aria-hidden="true"
+              class="w-5 h-5"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                clip-rule="evenodd"
+              ></path>
+            </svg>
+            <span class="sr-only">Close menu</span>
+          </button>
+          <div class="py-4 overflow-y-auto">
+            <ul class="space-y-2 font-medium">
+              <li>
+                <a
+                  href="javascript:void(0)"
+                  class="flex items-center p-2 text-gray-900 rounded-lg hover:bg-gray-100"
+                >
+                  <svg
+                    class="w-5 h-5 text-gray-500 transition duration-75 group-hover:text-gray-900"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="currentColor"
+                    viewBox="0 0 22 21"
+                  >
+                    <path
+                      d="M16.975 11H10V4.025a1 1 0 0 0-1.066-.998 8.5 8.5 0 1 0 9.039 9.039.999.999 0 0 0-1-1.066h.002Z"
+                    />
+                    <path
+                      d="M12.5 0c-.157 0-.311.01-.565.027A1 1 0 0 0 11 1.02V10h8.975a1 1 0 0 0 1-.935c.013-.188.028-.374.028-.565A8.51 8.51 0 0 0 12.5 0Z"
+                    />
+                  </svg>
+                  <span class="ms-3">Tentang UTM</span>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="javascript:void(0)"
+                  class="flex items-center p-2 text-gray-900 rounded-lg hover:bg-gray-100"
+                >
+                  <svg
+                    class="shrink-0 w-5 h-5 text-gray-500 transition duration-75 group-hover:text-gray-900"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="currentColor"
+                    viewBox="0 0 18 18"
+                  >
+                    <path
+                      d="M6.143 0H1.857A1.857 1.857 0 0 0 0 1.857v4.286C0 7.169.831 8 1.857 8h4.286A1.857 1.857 0 0 0 8 6.143V1.857A1.857 1.857 0 0 0 6.143 0Zm10 0h-4.286A1.857 1.857 0 0 0 10 1.857v4.286C10 7.169 10.831 8 11.857 8h4.286A1.857 1.857 0 0 0 18 6.143V1.857A1.857 1.857 0 0 0 16.143 0Zm-10 10H1.857A1.857 1.857 0 0 0 0 11.857v4.286C0 17.169.831 18 1.857 18h4.286A1.857 1.857 0 0 0 8 16.143v-4.286A1.857 1.857 0 0 0 6.143 10Zm10 0h-4.286A1.857 1.857 0 0 0 10 11.857v4.286c0 1.026.831 1.857 1.857 1.857h4.286A1.857 1.857 0 0 0 18 16.143v-4.286A1.857 1.857 0 0 0 16.143 10Z"
+                    />
+                  </svg>
+                  <span class="flex-1 ms-3 whitespace-nowrap">Kelembagaan</span>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="javascript:void(0)"
+                  class="flex items-center p-2 text-gray-900 rounded-lg hover:bg-gray-100"
+                >
+                  <svg
+                    class="shrink-0 w-5 h-5 text-gray-500 transition duration-75 group-hover:text-gray-900"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                  >
+                    <path
+                      d="m17.418 3.623-.018-.008a6.713 6.713 0 0 0-2.4-.569V2h1a1 1 0 1 0 0-2h-2a1 1 0 0 0-1 1v2H9.89A6.977 6.977 0 0 1 12 8v5h-2V8A5 5 0 1 0 0 8v6a1 1 0 0 0 1 1h8v4a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1v-4h6a1 1 0 0 0 1-1V8a5 5 0 0 0-2.582-4.377ZM6 12H4a1 1 0 0 1 0-2h2a1 1 0 0 1 0 2Z"
+                    />
+                  </svg>
+                  <span class="flex-1 ms-3 whitespace-nowrap">Data</span>
+                  <span
+                    class="inline-flex items-center justify-center w-3 h-3 p-3 ms-3 text-sm font-medium text-blue-800 bg-blue-100 rounded-full"
+                    >3</span
+                  >
+                </a>
+              </li>
+              <li>
+                <a
+                  href="javascript:void(0)"
+                  class="flex items-center p-2 text-gray-900 rounded-lg hover:bg-gray-100"
+                >
+                  <svg
+                    class="shrink-0 w-5 h-5 text-gray-500 transition duration-75 group-hover:text-gray-900"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="currentColor"
+                    viewBox="0 0 20 18"
+                  >
+                    <path
+                      d="M14 2a3.963 3.963 0 0 0-1.4.267 6.439 6.439 0 0 1-1.331 6.638A4 4 0 1 0 14 2Zm1 9h-1.264A6.957 6.957 0 0 1 15 15v2a2.97 2.97 0 0 1-.184 1H19a1 1 0 0 0 1-1v-1a5.006 5.006 0 0 0-5-5ZM6.5 9a4.5 4.5 0 1 0 0-9 4.5 4.5 0 0 0 0 9ZM8 10H5a5.006 5.006 0 0 0-5 5v2a1 1 0 0 0 1 1h11a1 1 0 0 0 1-1v-2a5.006 5.006 0 0 0-5-5Z"
+                    />
+                  </svg>
+                  <span class="flex-1 ms-3 whitespace-nowrap">Admisi</span>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="javascript:void(0)"
+                  class="flex items-center p-2 text-gray-900 rounded-lg hover:bg-gray-100"
+                >
+                  <svg
+                    class="shrink-0 w-5 h-5 text-gray-500 transition duration-75 group-hover:text-gray-900"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="currentColor"
+                    viewBox="0 0 18 20"
+                  >
+                    <path
+                      d="M17 5.923A1 1 0 0 0 16 5h-3V4a4 4 0 1 0-8 0v1H2a1 1 0 0 0-1 .923L.086 17.846A2 2 0 0 0 2.08 20h13.84a2 2 0 0 0 1.994-2.153L17 5.923ZM7 9a1 1 0 0 1-2 0V7h2v2Zm0-5a2 2 0 1 1 4 0v1H7V4Zm6 5a1 1 0 1 1-2 0V7h2v2Z"
+                    />
+                  </svg>
+                  <span class="flex-1 ms-3 whitespace-nowrap">Dokumen</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section
+        class="mx-auto px-4 py-8 lg:grid lg:grid-cols-3 lg:gap-8 max-w-screen-xl"
+      >
+        <!-- section Content -->
+        <div class="lg:col-span-2 mb-8 lg:mb-0">
+          <!-- Post Detail -->
+          <article class="bg-white rounded-lg shadow-md p-3 lg:p-6">
+            <!-- bagde -->
+            <div class="flex gap-2">
+              <span
+                class="px-2 py-1 font-bold cursor-pointer bg-amber-200 rounded"
+                >Berita</span
+              >
+              <span
+                class="px-2 py-1 font-bold cursor-pointer bg-amber-200 rounded"
+                >Headlines</span
+              >
+            </div>
+            <!-- date -->
+            <div class="flex gap-2 py-4">
+              <span class="text-sm text-gray-400">Diposting 2 jam lalu,</span>
+              <span class="text-sm text-gray-400">Oleh Admin</span>
+            </div>
+            <!-- detail -->
+            <div class="">
+              <img
+                src="https://www.trunojoyo.ac.id/wp-content/uploads/2025/02/DSC_0949-2048x1365.jpg"
+                alt="img"
+                class="pb-5"
+              />
+              <p>
+                Bangkalan 13 Februari 2025– Universitas Trunojoyo Madura (UTM)
+                menerima kunjungan silaturahmi dan serap aspirasi bersama Bupati
+                dan Wakil Bupati Bangkalan terpilih periode 2025-2030, Lukman
+                Hakim dan Fauzan Jakfar. Kegiatan ini berlangsung di ruang 502
+                lantai 5 Gedung Graha Utama Universitas Trunojoyo Madura dengan
+                penuh kehangatan serta menjadi ajang diskusi strategis guna
+                meningkatkan kesejahteraan masyarakat dan kemajuan Kabupaten
+                Bangkalan. Rektor UTM, Prof. Dr. Safi’, S.H., M.H., dalam
+                sambutannya, menyampaikan selamat dan sukses atas terpilihnya
+                Bupati dan Wakil Bupati Bangkalan.<br /><br />
+                Ia menegaskan bahwa UTM siap bersinergi dan bergerak dalam
+                frekuensi yang sama untuk mendorong kesejahteraan masyarakat
+                serta meningkatkan Indeks Pembangunan Manusia (IPM) di
+                Bangkalan. Prof. Safi’ juga menyoroti pentingnya peningkatan
+                sektor pendidikan dan kesehatan yang masih memerlukan perhatian
+                lebih.<br /><br />
+                Sebagai salah satu kampus di Jawa Timur, UTM siap menjadi mitra
+                strategis bagi pemerintah daerah dalam mengurangi angka
+                kemiskinan di Madura. Salah satu inisiatif yang sedang digagas
+                adalah rancangan Peraturan Bupati (Perbup) tentang pengelolaan
+                kos-kosan dan kontrakan di sekitar kampus. Langkah ini bertujuan
+                untuk membentuk karakter penghuni kos serta menciptakan
+                lingkungan yang lebih kondusif. Istilah “Kampung Karakter”
+                diusulkan sebagai model yang bisa diterapkan di berbagai desa
+                dengan fasilitas pendidikan yang lengkap, mulai dari PAUD hingga
+                perguruan tinggi dan SLB.<br /><br />
+                Selain itu, Rektor UTM juga menekankan pentingnya pembangunan
+                infrastruktur bagi kampus, seperti gelanggang olahraga dan akses
+                jalan yang lebih baik dari Jembatan Suramadu ke UTM.
+              </p>
+              <img
+                src="https://www.trunojoyo.ac.id/wp-content/uploads/2025/02/DSC_0909-768x512.jpg"
+                alt="img"
+                class="py-5"
+              />
+              <p>
+                Dalam sambutannya, Bupati Bangkalan terpilih, Lukman Hakim,
+                mengucapkan terima kasih atas sambutan hangat dari UTM. Ia
+                menegaskan pentingnya koordinasi dan kerja sama antara
+                pemerintah daerah dengan UTM untuk merumuskan kebijakan berbasis
+                kebutuhan masyarakat. Setiap Organisasi Perangkat Daerah (OPD)
+                diharapkan memiliki prestasi setiap tahunnya dan menjadikan UTM
+                sebagai laboratorium penelitian guna menghasilkan kebijakan yang
+                terukur dan berbasis hukum. <br /><br />
+                Menanggapi persoalan infrastruktur, Lukman Hakim mengungkapkan
+                bahwa beberapa ruas jalan, termasuk di sekitar UTM, akan
+                ditingkatkan statusnya menjadi jalan provinsi agar tidak terlalu
+                membebani anggaran kabupaten. Ia juga mengajak UTM untuk
+                berkolaborasi dalam membangun citra Pemerintah Kabupaten
+                Bangkalan dengan konsep simbiosis mutualisme. <br /><br />
+                Sementara itu, Wakil Bupati Bangkalan terpilih, Fauzan Jakfar,
+                menegaskan perlunya perhatian serius terhadap regulasi kos-kosan
+                di sekitar UTM guna mencegah berbagai permasalahan sosial.
+                Pemerintah daerah harus turun tangan dalam mengatur maraknya
+                tempat tinggal mahasiswa untuk mencegah dampak negatif yang
+                lebih luas. Oleh karena itu, diperlukan perubahan Peraturan
+                Daerah (Perda) yang lebih konkret dan efektif. <br /><br />
+                Selain itu, Fauzan juga menyoroti perbaikan akses jalan menuju
+                UTM yang masih menjadi kendala. Ia menjelaskan bahwa jalan
+                nasional dan kabupaten yang ada belum mencakup status jalan
+                provinsi, sehingga perlu perhatian lebih dalam pengembangannya.
+                Pemerintah Kabupaten Bangkalan juga berencana mengembangkan
+                konsep wisata halal yang lebih konkret dengan dukungan dari UTM
+                sebagai ujung tombak dalam memperbaiki tata kelola pemerintahan.
+                <br /><br />
+                Silaturahmi ini menjadi langkah awal yang positif dalam
+                membangun sinergi antara pemerintah daerah dan akademisi demi
+                kemajuan Bangkalan. Diharapkan, hasil dari pertemuan ini dapat
+                segera diwujudkan dalam kebijakan konkret yang berdampak
+                langsung bagi masyarakat.
+              </p>
+            </div>
+          </article>
+          <!-- navigation -->
+          <div class="flex justify-between mt-8">
+            <a
+              href="javascript:void(0)"
+              class="flex items-center gap-2 text-gray-400 hover:text-yellow-400"
+            >
+              <svg
+                class="w-5 h-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                aria-hidden="true"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M15 19l-7-7 7-7"
+                />
+              </svg>
+              <span>Sebelumnya</span>
+            </a>
+            <a
+              href="javascript:void(0)"
+              class="flex items-center gap-2 text-gray-400 hover:text-yellow-400"
+            >
+              <span>Selanjutnya</span>
+              <svg
+                class="w-5 h-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                aria-hidden="true"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M9 5l7 7-7 7"
+                />
+              </svg>
+            </a>
+          </div>
+          <!-- comment -->
+          <div class="mt-8">
+            <h3 class="text-lg font-bold text-gray-900">Komentar</h3>
+            <div class="flex items-start gap-4 mt-4">
+              <div class="flex-1">
+                <p>
+                  Tinggalkan komentar anda, Alamat email Anda tidak akan
+                  dipublikasikan. Ruas yang wajib ditandai
+                  <span class="text-red-600">*</span>
+                </p>
+                <div class="flex gap-2 py-2">
+                  <input
+                    type="text"
+                    class="w-full p-3 border-2 border-gray-200 rounded"
+                    placeholder="Masukkan nama..."
+                  />
+                  <!-- email -->
+                  <input
+                    type="email"
+                    class="w-full p-3 border-2 border-gray-200 rounded"
+                    placeholder="Masukkan email..."
+                  />
+                </div>
+                <textarea
+                  class="w-full p-3 border-2 border-gray-200 rounded-lg"
+                  placeholder="Tulis komentar..."
+                ></textarea>
+                <div class="flex justify-end mt-2">
+                  <button
+                    class="px-4 py-2 text-white bg-yellow-400 rounded-lg cursor-pointer"
+                  >
+                    Kirim
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Sidebar Sticky -->
+        <div
+          class="lg:sticky lg:top-24 lg:h-[calc(100vh-2rem)] lg:overflow-y-auto"
+        >
+          <!-- Widget Trending Hashtag -->
+          <div class="bg-white rounded-lg shadow-md p-6 mb-6">
+            <h3 class="mb-4 text-lg font-bold text-gray-900">
+              Trending Hashtag
+            </h3>
+            <div class="flex flex-wrap gap-2">
+              <a
+                href="javascript:void(0)"
+                class="px-3 py-1 text-sm bg-gray-100 rounded-full hover:bg-primary-100"
+                >#PMB2024</a
+              >
+              <a
+                href="javascript:void(0)"
+                class="px-3 py-1 text-sm bg-gray-100 rounded-full hover:bg-primary-100"
+                >#WisudaUTM</a
+              >
+              <a
+                href="javascript:void(0)"
+                class="px-3 py-1 text-sm bg-gray-100 rounded-full hover:bg-primary-100"
+                >#Beasiswa</a
+              >
+              <a
+                href="javascript:void(0)"
+                class="px-3 py-1 text-sm bg-gray-100 rounded-full hover:bg-primary-100"
+                >#KampusMerdeka</a
+              >
+            </div>
+          </div>
+
+          <!-- Widget Post Terbaru -->
+          <div class="bg-white rounded-lg shadow-md p-6 mb-6">
+            <h3 class="mb-4 text-lg font-bold text-gray-900">Post Terbaru</h3>
+            <ul class="space-y-4">
+              <li class="border-t-2 border-gray-200">
+                <a
+                  href="javascript:void(0)"
+                  class="flex items-start hover:bg-gray-50 p-2 rounded"
+                >
+                  <img
+                    src="https://www.trunojoyo.ac.id/wp-content/uploads/2025/01/DSC_0318-768x512.jpg"
+                    alt="Thumbnail"
+                    class="w-16 h-16 object-cover rounded"
+                  />
+                  <div class="ml-3">
+                    <h4 class="text-sm font-semibold">
+                      Seminar Nasional Teknologi
+                    </h4>
+                    <span class="text-xs text-gray-400">2 jam lalu</span>
+                  </div>
+                </a>
+              </li>
+              <li class="border-t-2 border-gray-200">
+                <a
+                  href="javascript:void(0)"
+                  class="flex items-start hover:bg-gray-50 p-2 rounded"
+                >
+                  <img
+                    src="https://www.trunojoyo.ac.id/wp-content/uploads/2024/04/HMS_9008-2048x1367.jpg"
+                    alt="Thumbnail"
+                    class="w-16 h-16 object-cover rounded"
+                  />
+                  <div class="ml-3">
+                    <h4 class="text-sm font-semibold">
+                      Pembukaan Lapangan Parkir Baru
+                    </h4>
+                    <span class="text-xs text-gray-400">5 jam lalu</span>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Widget Komentar -->
+          <div class="bg-white rounded-lg shadow-md p-6">
+            <h3 class="mb-4 text-lg font-bold text-gray-900">
+              Komentar Terbaru
+            </h3>
+            <div class="space-y-4">
+              <div
+                class="flex items-start p-2 rounded border-2 border-gray-200"
+              >
+                <img
+                  class="w-8 h-8 rounded-full border-gray-200"
+                  src="https://pbs.twimg.com/media/GErmr4Oa0AAMQJ9.jpg"
+                  alt="User"
+                />
+                <div class="ml-3">
+                  <h4 class="text-sm font-semibold">Epyyyx</h4>
+                  <p class="text-sm text-gray-600">
+                    Informasi apa ini tidak jelas
+                  </p>
+                </div>
+              </div>
+              <div
+                class="flex items-start p-2 rounded border-2 border-gray-200"
+              >
+                <img
+                  class="w-8 h-8 rounded-full border-gray-200"
+                  src="https://media.tenor.com/arR9QaSHRQ8AAAAe/kucing-muntah.png"
+                  alt="User"
+                />
+                <div class="ml-3">
+                  <h4 class="text-sm font-semibold">Bow</h4>
+                  <p class="text-sm text-gray-600">
+                    Sudah malam atau sudah tau
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div
+        class="relative bg-gradient-to-br from-yellow-400 via-yellow-300 to-yellow-200 border-t border-yellow-500/20"
+      >
+        <!-- Texture Overlay -->
+        <div
+          class="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwJSIgaGVpZ2h0D0iMTAwJSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZmlsdGVyIGlkPSJub2lzZSI+PGZlVHVyYnVsZW5jZSB0eXBlPSJmcmFjdGFsTm9pc2UiIGJhc2VGcmVxdWVuY3k9IjAuOCIgbnVtT2N0YXZlcz0iNSIgc3RpdGNoVGlsZXM9InN0aXRjaCIvPjxmZUNvbG9yTWF0cml4IHR5cGU9InNhdHVyYXRlIiB2YWx1ZXM9IjAiLz48L2ZpbHRlcj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0D0iMTAwJSIgZmlsdGVyPSJ1cmwoI25vaXNlKSIgb3BhY2l0eT0iMC4xIi8+PC9zdmc+')] opacity-10"
+        ></div>
+
+        <div class="container mx-auto px-4 py-12 relative z-10 max-w-screen-xl">
+          <div
+            class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8"
+          >
+            <!-- About Section -->
+            <div class="mb-6 lg:mb-0">
+              <h2 class="mb-4 text-xl font-bold text-gray-900">
+                Portal Berita UTM
+              </h2>
+              <p class="text-gray-800 text-sm">
+                Sumber informasi terpercaya seputar kegiatan dan perkembangan
+                terbaru di Universitas Trunojoyo Madura
+              </p>
+              <div class="mt-4">
+                <address class="not-italic text-gray-700 text-sm">
+                  <svg
+                    class="w-4 h-4 inline-block mr-1"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
+                    />
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
+                    />
+                  </svg>
+                  Jl. Raya Telang, Kamal, Bangkalan
+                </address>
+              </div>
+            </div>
+
+            <!-- Quick Links -->
+            <div class="mb-6 lg:mb-0">
+              <h3 class="text-lg font-semibold mb-4 text-gray-900">
+                Tautan Cepat
+              </h3>
+              <ul class="space-y-2 text-sm">
+                <li>
+                  <a
+                    href="javascript:void(0)"
+                    class="text-gray-700 hover:text-gray-900 transition hover:underline"
+                    >Tentang UTM</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="javascript:void(0)"
+                    class="text-gray-700 hover:text-gray-900 transition hover:underline"
+                    >Berita Terkini</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="javascript:void(0)"
+                    class="text-gray-700 hover:text-gray-900 transition hover:underline"
+                    >Agenda Kampus</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="javascript:void(0)"
+                    class="text-gray-700 hover:text-gray-900 transition hover:underline"
+                    >Pengumuman Resmi</a
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <!-- News Categories -->
+            <div class="mb-6 lg:mb-0">
+              <h3 class="text-lg font-semibold mb-4 text-gray-900">
+                Kategori Berita
+              </h3>
+              <ul class="space-y-2 text-sm">
+                <li>
+                  <a
+                    href="javascript:void(0)"
+                    class="text-gray-700 hover:text-gray-900 transition hover:underline"
+                    >Akademik</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="javascript:void(0)"
+                    class="text-gray-700 hover:text-gray-900 transition hover:underline"
+                    >Kemahasiswaan</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="javascript:void(0)"
+                    class="text-gray-700 hover:text-gray-900 transition hover:underline"
+                    >Penelitian</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="javascript:void(0)"
+                    class="text-gray-700 hover:text-gray-900 transition hover:underline"
+                    >Pengabdian Masyarakat</a
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <!-- Social Media -->
+            <div>
+              <h3 class="text-lg font-semibold mb-4 text-gray-900">
+                Media Sosial
+              </h3>
+              <div class="flex space-x-4">
+                <a
+                  href="javascript:void(0)"
+                  class="text-gray-600 hover:text-primary-500"
+                  aria-label="Facebook"
+                >
+                  <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                    <path
+                      fill-rule="evenodd"
+                      d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                </a>
+                <a
+                  href="javascript:void(0)"
+                  class="text-gray-600 hover:text-primary-500"
+                  aria-label="Twitter"
+                >
+                  <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                    <path
+                      d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84"
+                    />
+                  </svg>
+                </a>
+                <a
+                  href="javascript:void(0)"
+                  class="text-gray-600 hover:text-primary-500"
+                  aria-label="Instagram"
+                >
+                  <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                    <path
+                      fill-rule="evenodd"
+                      d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.137.353.3.882.344 1.857.047 1.023.058 1.351.058 3.807v.468c0 2.456-.011 2.784-.058 3.807-.045.975-.207 1.504-.344 1.857-.182.466-.398.8-.748 1.15-.35.35-.683.566-1.15.748-.353.137-.882.3-1.857.344-1.054.048-1.37.058-3.807.058h-.468c-2.456 0-2.784-.011-3.807-.058-.975-.045-1.504-.207-1.857-.344-.466-.182-.8-.398-1.15-.748-.35-.35-.566-.683-.748-1.15-.137-.353-.3-.882-.344-1.857-.048-1.023-.058-1.351-.058-3.807v-.468c0-2.456.011-2.784.058-3.807.045-.975.207-1.504.344-1.857.182-.466.398-.8.748-1.15.35-.35.683-.566 1.15-.748.353-.137.882-.3 1.857-.344 1.023-.047 1.351-.058 3.807-.058h.468c2.456 0 2.784.011 3.807.058.975.045 1.504.207 1.857.344.466.182.8.398 1.15.748.35.35.566.683.748 1.15.137.353.3.882.344 1.857.048 1.023.058 1.351.058 3.807v.468c0 2.456-.011 2.784-.058 3.807-.045.975-.207 1.504-.344 1.857-.182.466-.398.8-.748 1.15-.35.35-.683.566-1.15.748-.353.137-.882.3-1.857.344-1.023.047-1.351.058-3.807.058h-.468zM12 8.25a3.75 3.75 0 100 7.5 3.75 3.75 0 000-7.5zM12 15a3 3 0 110-6 3 3 0 010 6z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Copyright -->
+          <div class="pt-8 border-t border-yellow-500/30">
+            <div
+              class="flex flex-col md:flex-row justify-between items-center text-sm text-gray-700"
+            >
+              <div class="mb-2 md:mb-0">
+                © 2024 Portal Berita UTM. All rights reserved.
+              </div>
+              <div class="flex space-x-4">
+                <a href="javascript:void(0)" class="hover:text-gray-900"
+                  >Privacy Policy</a
+                >
+                <a href="javascript:void(0)" class="hover:text-gray-900"
+                  >Terms of Service</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div
+      class="fixed top-0 bg-black opacity-90 z-50 w-full h-full"
+      id="loading"
+    >
+      <div class="flex items-center justify-center h-full">
+        <div class="loader">
+          <svg viewBox="0 0 80 80">
+            <circle id="test" cx="40" cy="40" r="32"></circle>
+          </svg>
+        </div>
+
+        <div class="loader triangle">
+          <svg viewBox="0 0 86 80">
+            <polygon points="43 8 79 72 7 72"></polygon>
+          </svg>
+        </div>
+
+        <div class="loader">
+          <svg viewBox="0 0 80 80">
+            <rect x="8" y="8" width="64" height="64"></rect>
+          </svg>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="topBotton fixed right-4 -bottom-40 opacity-0 transition-all duration-300 z-50 cursor-pointer p-1 hover:scale-[1.1] bg-white rounded-full"
+      id="topBotton"
+      onclick="topFunction()"
+    >
+      <a href="javascript:void(0)"
+        ><svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="currentColor"
+          class="bi bi-arrow-up-circle w-8 block text-yellow-400"
+          viewBox="0 0 16 16"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707z"
+          /></svg
+      ></a>
+    </div>
+
+    <script src="./public/js/script.js"></script>
+    <script src="./node_modules/flowbite/dist/flowbite.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,19 @@
+{
+  "dependencies": {
+    "@tailwindcss/cli": "^4.0.8",
+    "flowbite": "^3.1.2",
+    "tailwindcss": "^4.0.8"
+  },
+  "name": "berita",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch:css": "npx @tailwindcss/cli -i ./src/input.css -o ./public/styles/styles.css --watch",
+    "build:css": "npx @tailwindcss/cli -i ./src/input.css -o ./public/styles/styles.css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
